@@ -1,0 +1,106 @@
+@font-face{
+    src: url("./BIPs.ttf");
+    font-family: 'my font';
+}
+
+* {
+    margin: 0;
+    font-family: "my font";
+}
+header{
+    height: 25px;
+    background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+footer p {
+text-align: center;
+}
+footer{
+    height: 22px;
+    background: linear-gradient(45deg, #b51294, #bb57f9, #2684bb, #0cbb11);
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+body {
+    position: relative;
+    border:2px black solid;
+}
+
+.main {
+
+}
+
+.game-field {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 8%;
+    /* -webkit-box-shadow: 0px 6px 16px 4px rgba(0,0,0,0.83); 
+box-shadow: 0px 6px 16px 4px rgba(0,0,0,0.83);
+border-radius: 5px; */
+
+}
+
+.card {
+    background-color: rgb(36, 189, 189);
+    cursor: pointer;
+    border-radius: 8px;
+    /* -webkit-box-shadow: 2px 2px 18px 2px #000000; 
+    box-shadow: 2px 2px 18px 2px #000000; */
+}
+.top_left {
+    -webkit-box-shadow: -15px -9px 20px -4px #000000; 
+    box-shadow: -15px -9px 20px -4px #000000;
+}
+.top {
+    
+}
+
+/* flip card */
+
+.flip-card {
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.9s;
+    transform-style: preserve-3d;
+}
+
+
+
+.flip-card img {
+    width: 100%;
+}
+
+
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+}
+
+
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+
+/* class to start rotation */
+
+ .flip {
+    transform: rotateY(180deg);
+} 
+
+.game-info {
+    display: flex;
+    margin: 0 auto;
+    max-width: 400px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
